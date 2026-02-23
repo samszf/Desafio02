@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Workshop</title>
+    </head>
+<body>
+
+    <!-- cabeçalho HTML na veia-->
+        <header>
+            <h1>HTML na Veia</h1>
+            <p>Do zero à primeira página</p>
+            <nav>
+                <a href="#">O Workshop</a> |
+                <a href="#">Programação</a> |
+                <a href="#">Formulário</a> |
+                <a href="#">Organização</a>
+            </nav>
+        </header>
+    <hr>
+    <main>
+
+        <!-- Explicação do evento utilizando marcadores de parágrafos-->
+        <section>
+            <p>O HTML na Veia é um evento educacional voltado para iniciantes e entusiastas do desenvolvimento web que desejam compreender,
+            na prática, os fundamentos do HTML. O objetivo é capacitar os participantes a criar páginas web bem estruturadas, acessíveis e
+            alinhadas com boas práticas utilizadas no mercado.</p>
+            <p>Durante o evento, você aprenderá como organizar conteúdos de forma semântica, construir formulários funcionais e entender a 
+            importância do HTML como base para qualquer projeto web moderno. Tudo isso por meio de exemplos práticos, atividades guiadas e
+            troca de experiências com outros participantes.</p>
+            <p>Se você está dando os primeiros passos na programação ou quer fortalecer sua base para evoluir em CSS, JavaScript e frameworks, este 
+            evento foi feito para você.</p>
+
+            <!-- Marcações de Data e Local usando listas-->
+            <ul>
+                <li>Data: 23/03/2026</li>
+                <li>Local: Poços de Caldas, MG.</li>
+                <li>Publico-alvo: Iniciantes, entusiastas e público em geral.</li>
+            </ul>
+        </section>
+        <hr>
+        <h2>Programação do Evento</h2>
+
+        <!-- Seções para separar as atividades do workshop-->
+        <section>
+            <article>
+                <h3>Atividade 1 - Fundamentos do HTML</h3>
+                <h4>Horário: 09:00 - 10:30</h4>
+                <h4>Descrição:</h4>
+                <p>Introdução aos conceitos essenciais do HTML,incluindo a estrutura básica do documento, principais tags semânticas
+                e boas práticas para organização do código. Ideal para quem está começando e quer entender como a web é construída desde
+                a base.</p>
+            </article>
+            <article>
+                <h3>Atividade 2 - Criando formulários na prática</h3>
+                <h4>Horário: 11:00 - 12:30</h4>
+                <h4>Descrição:</h4>
+                <p>Aprender a criar formulários completos e funcionais, utilizando campos de entrada, labels, validações básicas e 
+                agrupamento de informações. A atividade foca em usabilidade, acessibilidade e na correta coleta de dados do usuário.</p>
+            </article>
+            <article>
+                <h3>Atividade 3 - Projeto final: Sua Primeira Página Web</h3>
+                <h4>Horário: 14:00 - 16:30</h4>
+                <h4>Descrição:</h4>
+                <p>Hora de colocar a mão na massa! Os participantes irão desenvolver uma página HTML completa, aplicando tudo que foi
+                aprendido durante o evento. Ao final, você terá um projeto estruturado e pronto para receber estilos e interatividade.</p>
+            </article>
+        </section>
+
+        <form action="#" method="post">
+
+        <!--Fieldset e legend para agrupar dados pessoais de cadastro para o workshop-->
+        <fieldset> 
+                <legend>Dados Pessoais:</legend>
+                    <label for="cname">Nome Completo:</label><br>
+                    <input type="text" id="cname" name="cname" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="senha">Senha:</label><br>
+
+                    <!-- Container para o campo de senha e o botão de alternância -->
+                    <div class="senha-container"> 
+                        <input type="password" id="senha" name="senha" required>
+                        <button type="button" id="toggleSenha">👁</button>
+                    </div>
+
+                    <label for="bday">Data de nascimento:</label><br>
+                    <input type="date" id="bday" name="bday" required><br>
+                    <label for="age">Idade:</label><br>
+                    <input type="number" id="age" name="age" min="1" max="120"><br>
+                    <label for="phone">Telefone:</label><br>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10,11}" placeholder="(XX) XXXXX-XXXX" required><br>
+                    <label for="ingresso">Tipo de ingresso:</label><br>
+                    <select id="ingresso" name="ingresso" required>
+                        <option value="inteira">Inteira</option>
+                        <option value="meia">Meia-entrada</option>
+                        <option value="social">Meia Social</option>
+                    </select>
+            </fieldset>
+
+            <!-- Fieldset e legend dos métodos de participação prefeiridos-->
+            <fieldset> 
+                <legend>Método de participação:</legend>
+                    <input type="radio" id="presencial" name="enter" value="presencial" required>
+                    <label for="presencial">Presencial</label><br>
+                    <input type="radio" id="online" name="enter" value="online" required>
+                    <label for="online">Online</label><br>
+            </fieldset>
+
+            <!-- Fieldset e legend dos termos de uso e privacidade-->
+            <fieldset> 
+                <legend>Termos de Uso e Politica de Privacidade:</legend>
+                    <input type="checkbox" id="terms" name="terms" value="terms">
+                    <label for="terms">Aceito os termos de uso e a política de privacidade.</label><br>    
+            </fieldset>
+            <!-- Botões de Submit e Reset-->
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </main>
+    <hr>
+
+    <!-- Rodapés com hiperlink para o instagram-->
+    <footer>
+        <p>Workshop organizado por: Samuel Freire</p><br>
+        <p> Para se manter atualizado visite nossa página do <a href="https://www.instagram.com">Instagram</a></p>
+        <p> 2026. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
