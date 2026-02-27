@@ -1,128 +1,114 @@
-🧩 Desafio HTML: Página de Cadastro de Evento
-🎯 Objetivo
+# 🧩 HTML na Veia — Página de Cadastro de Evento
 
-Criar uma página HTML completa e bem estruturada para cadastro em um evento fictício, utilizando HTML semântico e boas práticas.
+Projeto desenvolvido com o objetivo de praticar e consolidar fundamentos de **HTML semântico**, **CSS moderno** e **JavaScript básico**, simulando uma página real de cadastro para um evento fictício.
 
-📌 Requisitos obrigatórios
-1️⃣ Estrutura básica
+---
 
-Usar corretamente:
+## 🎯 Objetivo do Projeto
 
-<!DOCTYPE html>
+Desenvolver uma página web completa e funcional para inscrição em um evento, aplicando boas práticas de estruturação, acessibilidade, organização de código e separação de responsabilidades entre HTML, CSS e JavaScript.
 
-<html lang="pt-BR">
+O projeto tem como foco o aprendizado progressivo e a construção de uma base sólida para evolução em desenvolvimento front-end.
 
-<head> com:
+---
 
-<meta charset="UTF-8">
+## 📌 Requisitos do Projeto
 
-<meta name="viewport">
+### 1️⃣ Estrutura HTML
+- Utilização correta do `<!DOCTYPE html>`
+- Definição do idioma da página (`lang="pt-BR"`)
+- Uso adequado das tags semânticas:
+  - `<header>`
+  - `<main>`
+  - `<section>`
+  - `<article>`
+  - `<footer>`
+- Hierarquia correta de títulos (`h1` até `h4`)
+- Código bem indentado e organizado
 
-<title>
+---
 
-2️⃣ Estrutura semântica
+### 2️⃣ Conteúdo da Página
 
-A página deve conter:
+#### 🔹 Cabeçalho
+- Nome do evento
+- Slogan
+- Menu de navegação
 
-<header>
+#### 🔹 Seção — Sobre o Evento
+- Texto explicativo sobre o evento
+- Lista com:
+  - Data
+  - Local
+  - Público-alvo
 
-<main>
+#### 🔹 Seção — Programação
+- Pelo menos **3 atividades**
+- Cada atividade estruturada dentro de um `<article>`
+- Informações de:
+  - Título
+  - Horário
+  - Descrição
 
-<section> (pelo menos 2)
+---
 
-<article> (pelo menos 1)
+### 3️⃣ Formulário de Inscrição
+- Campo para nome completo
+- Campo de e-mail
+- Campo de senha com opção de mostrar/ocultar
+- Data de nascimento
+- Idade
+- Telefone com validação de formato
+- Seleção de tipo de ingresso
+- Escolha do método de participação (presencial ou online)
+- Aceite de termos de uso e política de privacidade
+- Botões de envio e limpeza
 
-<footer>
+📌 Todos os campos possuem:
+- `<label>` associado corretamente
+- Validações básicas com HTML (`required`, `pattern`, `type`)
 
-3️⃣ Conteúdo do site
-🔹 Header
+---
 
-Nome do evento
+### 4️⃣ Estilização (CSS)
+- Reset básico de estilos
+- Uso de variáveis CSS (`:root`)
+- Layout centralizado
+- Tipografia legível
+- Estilização de formulários
+- Separação visual de seções e atividades
+- Feedback visual em botões
+- Estrutura preparada para responsividade
 
-Um slogan curto
+---
 
-🔹 Seção 1 — Sobre o evento
+### 5️⃣ Interatividade (JavaScript)
+- Script separado do HTML
+- Alternância de visibilidade da senha
+- Código defensivo para evitar erros
+- Melhoria de acessibilidade com `aria-label`
 
-Um parágrafo explicando o evento
+---
 
-Uma lista (<ul> ou <ol>) com:
+## 📁 Estrutura de Arquivos
+---
 
-Data
+## 🧠 Conceitos Praticados
+- HTML semântico
+- Acessibilidade básica
+- Formulários e validação
+- CSS moderno e organizado
+- Separação de responsabilidades
+- JavaScript para interações simples
+- Boas práticas de front-end
 
-Local
+---
 
-Público-alvo
+## 🚀 Próximos Passos (Evoluções Futuras)
+- Implementar layout em CSS Grid
+- Melhorar responsividade (mobile-first)
+- Validação avançada de formulário com JavaScript
+- Feedback visual de erro e sucesso
+- Publicação no GitHub Pages
 
-🔹 Seção 2 — Programação
-
-Pelo menos 3 atividades, cada uma dentro de um <article>:
-
-Título da atividade
-
-Horário
-
-Descrição curta
-
-4️⃣ Formulário de inscrição
-
-Criar um formulário funcional contendo:
-
-Campo de texto: Nome completo
-
-Campo de e-mail
-
-Campo de telefone
-
-Campo de data
-
-<select> para tipo de ingresso
-
-Radio buttons para participação (presencial / online)
-
-Checkbox para aceitar termos
-
-Botão de envio
-
-📌 Todos os campos devem ter:
-
-<label>
-
-required quando fizer sentido
-
-5️⃣ Acessibilidade e boas práticas
-
-Use for corretamente nos labels
-
-Utilize placeholder com moderação
-
-Campos agrupados com <fieldset> e <legend>
-
-6️⃣ Rodapé
-
-Nome do organizador
-
-Ano atual
-
-Um link externo (ex: Instagram ou site fictício)
-
-⭐ Desafios extras (opcional)
-
-Se quiser subir o nível:
-
-Adicione:
-
-<nav> com links internos
-
-Comentários no código
-
-Ícones usando emojis
-
-Prepare o HTML para receber CSS futuramente (classes bem nomeadas)
-
-📂 Entrega
-
-Arquivo: index.html
-
-Código bem indentado
-
-Somente HTML (sem CSS e JS por enquanto)
+---
